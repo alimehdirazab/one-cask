@@ -143,7 +143,7 @@ class CustomTextField extends StatelessWidget {
         labelStyle:
             labelStyle ??
             AppTextTheme().latoBodySmallText.copyWith(
-              color: AppColorTheme().secondary.withValues(alpha: 0.4),
+              color: AppColorTheme().secondary,
             ),
         alignLabelWithHint: alignLabelWithText,
       ),
@@ -154,7 +154,11 @@ class CustomTextField extends StatelessWidget {
       onChanged: onChanged,
       focusNode: focusNode,
       validator: validator,
-      style: contentStyle ?? AppTextTheme().latoBodyLargeText,
+      style:
+          contentStyle ??
+          AppTextTheme().latoBodyLargeText.copyWith(
+            color: AppColorTheme().white,
+          ),
       maxLines: maxLines,
       minLines: minLines,
     );
