@@ -101,39 +101,34 @@ class CustomTextField extends StatelessWidget {
         border: border,
         disabledBorder:
             disabledBorder ??
-            OutlineInputBorder(
-              borderRadius: BorderRadius.circular(8),
-              borderSide: BorderSide(color: AppColorTheme().darkGrey),
+            UnderlineInputBorder(
+              borderSide: BorderSide(color: AppColorTheme().secondary),
             ),
         enabledBorder:
             enabledBorder ??
-            OutlineInputBorder(
-              borderRadius: BorderRadius.circular(8),
-              borderSide: BorderSide(color: AppColorTheme().darkGrey),
+            UnderlineInputBorder(
+              borderSide: BorderSide(color: AppColorTheme().secondary),
             ),
         focusedBorder:
             focusedBorder ??
-            OutlineInputBorder(
-              borderRadius: BorderRadius.circular(8),
-              borderSide: BorderSide(color: AppColorTheme().darkGrey),
+            UnderlineInputBorder(
+              borderSide: BorderSide(color: AppColorTheme().secondary),
             ),
         errorBorder:
             errorBorder ??
-            OutlineInputBorder(
-              borderRadius: BorderRadius.circular(8),
+            UnderlineInputBorder(
               borderSide: BorderSide(color: AppColorTheme().red),
             ),
         focusedErrorBorder:
             focusedErrorBorder ??
-            OutlineInputBorder(
-              borderRadius: BorderRadius.circular(8),
+            UnderlineInputBorder(
               borderSide: BorderSide(color: AppColorTheme().red),
             ),
         error: error,
         hintText: hintText,
         hintStyle:
             hintStyle ??
-            AppTextTheme().latoBodyText.copyWith(
+            AppTextTheme().latoBodySmallText.copyWith(
               color: AppColorTheme().secondary.withValues(alpha: 0.4),
             ),
         isDense: isDense,
@@ -141,13 +136,13 @@ class CustomTextField extends StatelessWidget {
         prefixIcon: prefixIcon,
         prefixIconConstraints: prefixIconConstraints,
         prefixText: prefixText,
-        prefixStyle: prefixStyle ?? AppTextTheme().latoBodyText,
+        prefixStyle: prefixStyle ?? AppTextTheme().latoBodySmallText,
         contentPadding: contentPadding,
         suffixIconConstraints: suffixIconConstraints,
         labelText: labelText,
         labelStyle:
             labelStyle ??
-            AppTextTheme().latoBodyText.copyWith(
+            AppTextTheme().latoBodySmallText.copyWith(
               color: AppColorTheme().secondary.withValues(alpha: 0.4),
             ),
         alignLabelWithHint: alignLabelWithText,
@@ -159,7 +154,7 @@ class CustomTextField extends StatelessWidget {
       onChanged: onChanged,
       focusNode: focusNode,
       validator: validator,
-      style: contentStyle ?? AppTextTheme().latoBodyText,
+      style: contentStyle ?? AppTextTheme().latoBodyLargeText,
       maxLines: maxLines,
       minLines: minLines,
     );

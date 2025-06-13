@@ -12,7 +12,7 @@ class AppIcons {
   IconData get close => Icons.close_rounded;
   IconData get imageError => Icons.image_not_supported_rounded;
   IconData get circle => Icons.circle_rounded;
-  IconData get backArrow => Icons.arrow_back_ios_new;
+  IconData get backArrow => Icons.arrow_back;
   IconData get message => Icons.message_rounded;
   IconData get reviews => Icons.reviews;
   IconData get location => Icons.location_on;

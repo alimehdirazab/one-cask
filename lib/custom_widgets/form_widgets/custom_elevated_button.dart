@@ -64,7 +64,7 @@ class CustomElevatedButton extends StatelessWidget {
 
               Text(
                 title,
-                style: AppTextTheme().latoBodyLargeText.copyWith(
+                style: AppTextTheme().ebGaramondButtonLargeText.copyWith(
                   color: fontColor ?? AppColorTheme().white,
                   fontSize: fontSize ?? 14,
 

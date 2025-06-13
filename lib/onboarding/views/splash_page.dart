@@ -17,11 +17,9 @@ class _SplashPageState extends State<SplashPage> {
       setState(() {
         _iconOpacity = 0.0;
       });
-      Future.delayed(const Duration(milliseconds: 500), () {
+      Future.delayed(const Duration(milliseconds: 600), () {
         if (!mounted) return;
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (_) => const WelcomePage()),
-        );
+        context.pushReplacementPage(const WelcomePage());
       });
     });
   }

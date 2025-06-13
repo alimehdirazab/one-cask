@@ -40,9 +40,16 @@ class AppTextTheme {
     fontWeight: AppFontWeight.medium,
   );
 
+
   // Lato body large
   TextStyle get latoBodyLargeText => _latoBaseTextStyle.copyWith(
     fontSize: 16,
+    fontWeight: AppFontWeight.regular,
+  );
+
+  // Lato body small
+  TextStyle get latoBodySmallText => _latoBaseTextStyle.copyWith(
+    fontSize: 12,
     fontWeight: AppFontWeight.regular,
   );
 
@@ -55,6 +62,12 @@ class AppTextTheme {
   TextStyle get ebGaramondHeadingLargeText => _ebGaramondBaseTextStyle.copyWith(
     fontSize: 32,
     fontWeight: AppFontWeight.medium,
+  );
+
+  // EB Garamond button Large
+  TextStyle get ebGaramondButtonLargeText => _ebGaramondBaseTextStyle.copyWith(
+    fontSize: 16,
+    fontWeight: AppFontWeight.semiBold,
   );
 
   // EB Garamond styles
